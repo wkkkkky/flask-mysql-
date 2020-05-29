@@ -1,0 +1,18 @@
+{% extends 'admin/index.html' %}
+{% block content %}
+    <h1>新增新闻</h1>
+    <form action="" method="post">
+        <div>
+            {{ form.type.label.text }}
+            {{ form.type }}
+        </div>
+         <div>
+            {{ form.data.label.text }}
+            {{ form.data }}
+        </div>
+        <div>
+            {{ form.csrf_token }}
+            {{ form.submit }}
+        </div>
+    </form>
+{% endblock %}
